@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            text-align: end;
+        }
+
+        .team-member {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            margin: 10px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="team-member" onclick="toggleMovement('member1')">
+        <img src="1.png" alt="Team Member 1">
+      <a href="https://sudeepbio.netlify.app/"><h3>Sudeep Lamichhane</h3></a>
+    </div>
+    
+    <div class="team-member" onclick="toggleMovement('member2')">
+        <img src="2.png" alt="loading">
+    <h3>Saiman Baniya</h3></a>
+
+    <div class="team-member" onclick="toggleMovement('member3')">
+        <img src="bg.jpg" alt="loading">
+        <h3>Bebek Giri</h3></a>
+    </div>
+
+    </div>
+    
+    <div class="team-member" onclick="toggleMovement('member4')">
+        <img src="dt.jpg" alt="loading">
+        <h3>Dipson Thapa Chettri</h3></a>
+    <div class="team-member" onclick="toggleMovement('member5/')">
+        <img src="ak.jpg" alt="loading">
+        <h3>Adhiraj  karki</h3></a>
+    </div>
+
+    </div>
+    And 5 more members  who are Siddhant tamang, <br>
+    Neharika Poudel,Sadikshya Adhikari, <BR>Khushi Poudel and tejwasi Poudel.
+    
+</div><div class="team-member" onclick="toggleMovement('member 11')">
+    <img src="https://1.bp.blogspot.com/---RZ-91LRaA/YMdwgbkl4CI/AAAAAAAAAqs/Dxfm1fHqpQgkaJeqK84IIx8u5RPDNDqLgCLcBGAsYHQ/s16000/Traditional-Nepali-Home-Design.jpg" alt="Team Member 10 ">
+    <a href="https://sudeepdeve.github.io/Homepage-/"><h3>Back To HomePage<--</h3></a>
+</div>
+    <script>
+        function toggleMovement(memberId) {
+            const member = document.querySelector(`.${memberId}`);
+            member.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
